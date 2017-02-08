@@ -7,9 +7,9 @@ html {
 	top: 50%;
 	transform:translate(-50%, -50%);
 	height:350px;
-	width:200px;
-	border-bottom: 60px solid #223;
-	border-top: 50px solid #223;
+	width:250px;
+	border-bottom: 70px solid #223;
+	border-top: 60px solid #223;
 	border-left: 10px solid #223;
 	border-right: 10px solid #223;
 	border-radius: 20px;
@@ -21,8 +21,8 @@ html {
 	left:50%;
 	top:50%;
 	transform:translate(-40%, -45%);
-	width:330px;
-	height:600px;
+	width:280px;
+	height:480px;
 	background-color: #833;
 	border-radius:25px;
 }
@@ -31,9 +31,9 @@ html {
 	position:fixed;
 	left:50%;
 	top:50%;
-	transform:translate(-33px, -270px);
-	width:66px;
-	height:15px;
+	transform:translate(-25px, -215px);
+	width:50px;
+	height:10px;
 	background-color: #666;
 	border-radius:25px;
 }
@@ -42,7 +42,7 @@ html {
 	position:fixed;
 	left:50%;
 	top:50%;
-	transform:translate(-125px, -275px);
+	transform:translate(-110px, -225px);
 	width:25px;
 	height:25px;
 	background-color: #444;
@@ -53,20 +53,20 @@ html {
 	position:fixed;
 	left:50%;
 	top:50%;
-	transform:translate(-120px, -270px);
-	width:15px;
-	height:15px;
+	transform:translate(-102.5px, -217.5px);
+	width:10px;
+	height:10px;
 	background-color: #8a8;
 	border-radius:50%;
 }
 
 #topButton {
-	height: 15px;
-	width: 60px;
+	height: 10px;
+	width: 50px;
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform:translate(70px, -315px);
+	transform:translate(50px, -250px);
 	background: #5ac;
 	border: none 0;
 	border-radius: 2px;
@@ -74,11 +74,11 @@ html {
 
 #back {
 	position: fixed;
-	height: 55px;
-	width:55px;
+	height: 50px;
+	width:50px;
 	left: 50%;
 	top: 50%;
-	transform:translate(-50%, 230px);
+	transform:translate(-50%, 180px);
 	background: rgba(100, 100, 100, .5);
 	border: 5px solid #66d;
 	border-radius: 50%;
@@ -86,8 +86,8 @@ html {
 
 .app {
 	position: fixed;
-	height: 110px;
-	width: 110px;
+	height: 90px;
+	width: 90px;
 	top: 50%;
 	left: 50%;
 	border: none 0;
@@ -99,23 +99,29 @@ html {
 }
 
 #showImages {
-	background: #67f;
-	transform:translate(10px, -120px);
+	background: #fb0;
+	transform:translate(10px, -110px);
+	color: #34d;
+	border: 2px solid #34d;
 }
 
 #map {
 	background: #093;
-	transform:translate(-120px, 20px);
+	transform:translate(-105px, 10px);
+	color: #fdd;
+	border: 2px solid #fc3;
 }
 
 #info {
 	background: #000;
-	transform:translate(-120px, -120px);
+	transform:translate(-105px, -110px);
+	border: 2px solid #8ac;
 }
 
 #contact {
 	background: #52d;
-	transform:translate(15px, 20px);
+	transform:translate(10px, 10px);
+	border: 2px solid #662;
 }
 
 #next {
@@ -124,7 +130,7 @@ html {
 	left:50%;
 	height:35px;
 	width:60px;
-	transform:translate(60px, 160px);
+	transform:translate(50px, 120px);
 	color: #456;
 	font-size:20px;
 	background: #db7;
@@ -213,7 +219,7 @@ footer {
 	position: fixed;
 	text-align:center;
 	z-index: 3;
-	bottom: 0;
+	bottom: 20px;
 	left:50%;
 	transform:translate(210px,0);
 	
