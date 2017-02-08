@@ -60,6 +60,39 @@ html {
 	border-radius:50%;
 }
 
+#hold {
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-141px, -180px);
+	width:5px;
+	height:20px;
+	background-color: #da8;
+	border-radius:0;
+}
+
+#up {
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-143px, -140px);
+	width:8px;
+	height:15px;
+	background-color: #777;
+	border-radius:0;
+}
+
+#down {
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate(-143px, -110px);
+	width:8px;
+	height:15px;
+	background-color: #777;
+	border-radius:0;
+}
+
 #topButton {
 	height: 10px;
 	width: 50px;

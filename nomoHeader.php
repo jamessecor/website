@@ -13,5 +13,8 @@
 <div id="speaker"></div>
 <div id="cam1"></div>
 <div id="cam2"></div>
+<div id="hold"></div>
+<div id="up"></div>
+<div id="down"></div>
 <button id="topButton" ></button>
 <button id="back" ></button>
