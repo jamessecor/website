@@ -170,10 +170,10 @@ body, p, {
 }
 form {
 	position: fixed;
-	width: 250px;
+	width: 200px;
 	left: 50%;
 	top: 50%;
-	transform:translate(-140px, -200px);
+	transform:translate(-115px, -155px);
 	padding: 10px;
 	border: 5px solid #888;
 	border-radius: 15px;
@@ -184,7 +184,7 @@ form {
 
 input {
 	font-size: 16px;
-	width: 230px;
+	width: 185px;
 	padding: 5px;
 	border: 2px solid #aaa;
 	border-radius: 5px;
@@ -199,7 +199,7 @@ input[type="submit"] {
 	border: 0 none;
 }
 textarea {
-	width: 230px;
+	width: 185px;
 	height: 42px;
 	font-size: 16px;
 	padding: 5px;

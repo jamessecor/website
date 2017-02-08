@@ -54,7 +54,7 @@ var ctx = c.getContext("2d");
 // Make Map
 function drawMap() {
 	turnOff();
-	//turnOn();
+	onOrOff = true;
 	ctx.fillStyle = "#f66";
 	ctx.fillRect(0,0,phone.width,phone.height);
 	ctx.fillStyle="rgba(100,200,230,.7)";
@@ -73,6 +73,7 @@ function drawMap() {
 // Show #nomophobia info
 function showInfo() {
 	turnOff();
+	onOrOff = true;
 	ctx.fillStyle = "#dfc";
 	ctx.fillRect(0,0,phone.width,phone.height);
 	document.getElementById('infoText').style.display = 'inline';
@@ -86,6 +87,7 @@ var curImg = nomoImages[imageIndex];
 
 // Show images
 function showImages() {
+	onOrOff = true;
 	if(imageIndex == nomoImages.length) 
 		imageIndex = 0;
 	curImg = nomoImages[imageIndex];
