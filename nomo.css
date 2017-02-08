@@ -6,12 +6,12 @@ html {
 	left:50%;
 	top: 50%;
 	transform:translate(-50%, -50%);
-	height:450px;
-	width:300px;
-	border-bottom: 80px solid #223;
-	border-top: 70px solid #223;
-	border-left: 15px solid #223;
-	border-right: 15px solid #223;
+	height:350px;
+	width:200px;
+	border-bottom: 60px solid #223;
+	border-top: 50px solid #223;
+	border-left: 10px solid #223;
+	border-right: 10px solid #223;
 	border-radius: 20px;
 	background-color: #555;
 }
@@ -114,7 +114,7 @@ html {
 }
 
 #contact {
-	background: #522;
+	background: #52d;
 	transform:translate(15px, 20px);
 }
 
