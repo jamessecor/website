@@ -1,6 +1,8 @@
 <?PHP
 include "nomoHeader.php";
+// Include script for onload
 print "<script type='text/javascript' src='./contactScript.js'></script>";
+
 $validation="failed";
 $name="";
 $email="";
