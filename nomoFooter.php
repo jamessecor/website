@@ -1,5 +1,5 @@
 
-<div id="spacer"></div>
+
 
 <footer>
 	<?php

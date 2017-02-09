@@ -157,6 +157,11 @@ html {
 	border: 2px solid #662;
 }
 
+.errorText {
+	font-family: "Lucida Sans Typewriter", "Lucida Sans", sans-serif;
+	color: #480;
+	text-align:center;
+}
 #next {
 	position:fixed;
 	top:50%;
@@ -206,7 +211,7 @@ form {
 	width: 200px;
 	left: 50%;
 	top: 50%;
-	transform:translate(-115px, -155px);
+	transform:translate(-115px, -175px);
 	padding: 10px;
 	border: 5px solid #888;
 	border-radius: 15px;

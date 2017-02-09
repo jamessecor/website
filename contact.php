@@ -41,7 +41,7 @@ if(isset($_POST['submit'])) {
 
 if($validation=="Success") {
 	print "<script>turnOn();</script>";
-	$len=strlen($name);
+	//$len=strlen($name); don't need this, right?
 	print "<div id='formResponse'>";
 	print "<p>Success!<br><br>Thank you,<br>$name.</p>";
 	print "<p>Your information <br>has been saved.</p>";
@@ -51,7 +51,9 @@ if($validation=="Success") {
 ?>
 <form id='contactForm' action="" method='post'>
 Name <input type='text' name='name' value="<?php echo isset($_POST['name']) ? $_POST['name']: ''; ?>"  required="required"><br>
+<small class="errorText"><?php echo array_key_exists('name', $errors) ? $errors['name'] : ""; ?></small><br>
 Email* <input type='email' name='email' value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"required="required"><br>
+<small class="errorText"><?php echo array_key_exists('email', $errors) ? $errors['email'] : ""; ?></small><br>
 Message <textarea name='memo' placeholder='Enter comments here.' ><?php echo isset($_POST['memo']) ? $_POST['memo']: '' ?></textarea><br>
 <input type='submit' name='submit' value='Submit' formnovalidate>
 <p id='disclaimer'>*Only the artist will see your email</p>
