@@ -31,6 +31,10 @@ if(isset($_POST['submit'])) {
 		$errors['email']="This field is required.";
 	}
 	
+	// Memo
+	if(!empty($_POST['memo']))
+		$memo=$_POST['memo'];
+	
 	// Show errors
 	$errorCount=count($errors);
 	if($errorCount==0)
@@ -40,7 +44,6 @@ if(isset($_POST['submit'])) {
 
 if($validation=="Success") {
 	print "<script>turnOn();</script>";
-	//$len=strlen($name); don't need this, right?
 	print "<div id='formResponse'>";
 	print "<p>Success!<br><br>Thank you,<br>$name.</p>";
 	print "<p>Your information <br>has been saved.</p>";
