@@ -259,9 +259,9 @@ footer {
 	position: fixed;
 	text-align:center;
 	z-index: 3;
-	bottom: 20px;
 	left:50%;
-	transform:translate(210px,0);
+	top:50%;
+	transform:translate(210px,150px);
 	
 	font-family: "Lucida Sans Typewriter", "Lucida Sans", sans-serif;
 	color:#24a;
