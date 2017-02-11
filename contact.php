@@ -25,7 +25,7 @@ if(isset($_POST['submit'])) {
 	if(!empty($_POST['email'])) {
 		$email=$_POST['email'];
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			$errors['email']="Enter a valid email address.";
+			$errors['email']="Invalid email address.";
 		}
 	} else {
 		$errors['email']="This field is required.";
@@ -35,8 +35,7 @@ if(isset($_POST['submit'])) {
 	$errorCount=count($errors);
 	if($errorCount==0)
 		$validation="Success";		
-	else
-		print "<small class='errorText'>There are $errorCount errors. <br>Please make corrections and try again</small>";		
+	
 }
 
 if($validation=="Success") {
@@ -50,13 +49,13 @@ if($validation=="Success") {
 
 ?>
 <form id='contactForm' action="" method='post'>
-Name <input type='text' name='name' value="<?php echo isset($_POST['name']) ? $_POST['name']: ''; ?>"  required="required"><br>
+Name <br><input type='text' name='name' value="<?php echo isset($_POST['name']) ? $_POST['name']: ''; ?>"  required="required"><br>
 <small class="errorText"><?php echo array_key_exists('name', $errors) ? $errors['name'] : ""; ?></small><br>
 Email* <input type='email' name='email' value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>"required="required"><br>
 <small class="errorText"><?php echo array_key_exists('email', $errors) ? $errors['email'] : ""; ?></small><br>
 Message <textarea name='memo' placeholder='Enter comments here.' ><?php echo isset($_POST['memo']) ? $_POST['memo']: '' ?></textarea><br>
 <input type='submit' name='submit' value='Submit' formnovalidate>
-<p id='disclaimer'>*Only the artist will see your email</p>
+<p id='disclaimer'>*Only James will see your email</p>
 </form>
 
 

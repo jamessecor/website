@@ -1,6 +1,4 @@
-html {
-	min-width: 1000px;
-}
+
 #phone {
 	position:fixed;
 	left:50%;
@@ -161,6 +159,7 @@ html {
 	font-family: "Lucida Sans Typewriter", "Lucida Sans", sans-serif;
 	color: #480;
 	text-align:center;
+	font-size:12px;
 }
 #next {
 	position:fixed;
@@ -208,13 +207,16 @@ body, p, {
 }
 form {
 	position: fixed;
-	width: 200px;
+	width: 210px;
+	height: 310px;
 	left: 50%;
 	top: 50%;
-	transform:translate(-115px, -175px);
-	padding: 10px;
-	border: 5px solid #888;
-	border-radius: 15px;
+	transform:translate(-50%, -50%);
+	padding:20px;
+	/*padding-left:10px;
+	padding-right:10px;
+	padding-top:20px;
+	*/
 	color: #d55;
 	background-color: #8dd;
 	font-family: "Lucida Sans Typewriter", "Lucida Sans", sans-serif;

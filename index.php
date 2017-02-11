@@ -9,15 +9,15 @@ include "nomoHeader.php";
 <img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/12.jpg" alt="no image available">
 
 <!-- Apps -->
-<button id="contact" class="app" style="display:none">Contact Artist</button>
+<button id="contact" class="app" style="display:none">join email list</button>
 
-<button id="map" class="app" style="display:none">Map</button>
+<button id="map" class="app" style="display:none">map</button>
 <!-- Next Image -->
 <button id="next" class="imgButtons" style="display:none">next</button>
 
 <button id="info" class="app" style="display:none">#nomo- phobia info</button>
 
-<button id="showImages" class="app" style="display:none">Images</button>
+<button id="showImages" class="app" style="display:none">images</button>
 
 <!-- Info Text -->
 <div id="infoText" style="display:none">
