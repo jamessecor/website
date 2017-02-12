@@ -1,7 +1,8 @@
 <?PHP
 include "nomoHeader.php";
 // Include script for onload
-print "<script type='text/javascript' src='./contactScript.js'></script>";
+//  Moved script to the bottom 
+//print "<script type='text/javascript' src='./contactScript.js'></script>";
 
 $validation="failed";
 $name="";
@@ -43,6 +44,21 @@ if(isset($_POST['submit'])) {
 }
 
 if($validation=="Success") {
+	// New
+	$host='localhost';
+	$user='jamessecor';
+	$pwd='Uploadingnom0!';
+	$database='jrs_contacts';
+	$db=mysqli_connect($host, $user, $pwd, $database);
+	
+	$query="INSERT INTO contacts (name, email, note) VALUES ('$name', '$email', '$memo')";
+	$result=mysqli_query($db, $query);
+	if(!$result) {
+		$errmsg=mysqli_error($db);
+		print("Insert Error: $errmsg <br />");
+	}
+	// End new
+	
 	print "<script>turnOn();</script>";
 	print "<div id='formResponse'>";
 	print "<p>Success!<br><br>Thank you,<br>$name.</p>";
@@ -64,5 +80,6 @@ Message <textarea name='memo' placeholder='Enter comments here.' ><?php echo iss
 
 <?PHP
 }
+print "<script type='text/javascript' src='./contactScript.js'></script>";
 include "nomoFooter.php"
 ?>
