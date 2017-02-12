@@ -46,12 +46,13 @@ if(isset($_POST['submit'])) {
 if($validation=="Success") {
 	// New
 	$host='localhost';
-	$user='jamessecor';
-	$pwd='Uploadingnom0!';
-	$database='jrs_contacts';
+	$user='lunches';
+	$pwd='lunches';
+	$database='c3';
+	$date=date('Y-m-d');
 	$db=mysqli_connect($host, $user, $pwd, $database);
 	
-	$query="INSERT INTO contacts (name, email, note) VALUES ('$name', '$email', '$memo')";
+	$query="INSERT INTO contacts (name, email, note, date) VALUES ('$name', '$email', '$memo', '$date')";
 	$result=mysqli_query($db, $query);
 	if(!$result) {
 		$errmsg=mysqli_error($db);

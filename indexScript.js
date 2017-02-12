@@ -59,15 +59,16 @@ function drawMap() {
 	ctx.fillRect(0,0,phone.width,phone.height);
 	ctx.fillStyle="rgba(100,200,230,.7)";
 	ctx.fillRect(0,80,140,phone.height-80);
-	ctx.fillRect(190, 55, phone.width-165, phone.height-40);
+	ctx.fillRect(190, 55, phone.width-165, 70);
 	ctx.fillRect(0,0,150,45);
 	ctx.fillRect(210,10,phone.width-210,30);
 	ctx.fillStyle = "rgba(50,100,120,.5);";
-	ctx.fillRect(190,120,10,20);
+	ctx.fillRect(190,110,10,10);
+	ctx.fillRect(220,55,40,5);
 	ctx.font = "10px sans-serif";
-	ctx.fillText("Stairs (Down)", 200, 135);
-	ctx.fillRect(60, 80, 20, 20);
-	ctx.fillText("Elevator", 60, 102);
+	//ctx.fillText("Stairs (Down)", 200, 135);
+	ctx.fillRect(40, 80, 60, 20);
+	//ctx.fillText("Elevator", 60, 102);
 }
 
 // Show #nomophobia info
@@ -114,7 +115,7 @@ function turnOn() {
 	ctx.clearRect(0,0,phone.width,phone.height);
 	ctx.fillRect(0,0,phone.width,phone.height);
 	ctx.fillStyle = 'rgba(100,100,100,.1)';
-	ctx.fillRect(20, 5, 250, 10);
+	ctx.fillRect(20, 5, 258, 10);
 	onOrOff = true;
 }
 

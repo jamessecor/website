@@ -1,15 +1,7 @@
 function onLoading() {
 	// Phone Screen (canvas element)
 	
-	/*  Might need this to get the full screen the right color???
-	
-	var c = document.getElementById("phone");
-	var ctx = c.getContext("2d");
-	ctx.fillStyle = '#8dd';
-	ctx.clearRect(0,0,phone.width,phone.height);
-	ctx.fillRect(0,0,phone.width,phone.height);
-	
-	*/
+	turnOn();
 	
 	document.getElementById('back').addEventListener("click", function() { 
 		window.location.href = "index.php";
@@ -23,8 +15,18 @@ function onLoading() {
 
 }
 
+var c = document.getElementById("phone");
+var ctx = c.getContext("2d");
+
+// Change screen color
+function fill(color) {
+	ctx.fillStyle = color;
+	ctx.clearRect(0,0,phone.width,phone.height);
+	ctx.fillRect(0,0,phone.width,phone.height);
+}
+
 // Makes using onOff possible
-var onOrOff = false;
+var onOrOff = true;
 var f = document.getElementById('contactForm');
 
 function onOff() {
@@ -33,12 +35,14 @@ function onOff() {
 }
 
 function turnOn() {
+	fill('#8dd');
 	f.style.display = "inline";
 	onOrOff = true;
 }
 
 
 function turnOff() {
+	fill('#555');
 	f.style.display = "none";
 	onOrOff = false;
 }
