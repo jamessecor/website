@@ -1,8 +1,5 @@
 <?PHP
 include "nomoHeader.php";
-// Include script for onload
-//  Moved script to the bottom 
-//print "<script type='text/javascript' src='./contactScript.js'></script>";
 
 $validation="failed";
 $name="";
@@ -44,21 +41,27 @@ if(isset($_POST['submit'])) {
 }
 
 if($validation=="Success") {
-	// New
+	// Set up variables for db connection
 	$host='localhost';
 	$user='lunches';
 	$pwd='lunches';
 	$database='c3';
 	$date=date('Y-m-d');
+	$memo=addslashes($memo);
+	$name=addslashes($name);
+	
+	// Connect to the database
 	$db=mysqli_connect($host, $user, $pwd, $database);
 	
+	// Send query to db
 	$query="INSERT INTO contacts (name, email, note, date) VALUES ('$name', '$email', '$memo', '$date')";
+	
 	$result=mysqli_query($db, $query);
 	if(!$result) {
 		$errmsg=mysqli_error($db);
 		print("Insert Error: $errmsg <br />");
 	}
-	// End new
+	
 	
 	print "<script>turnOn();</script>";
 	print "<div id='formResponse'>";
