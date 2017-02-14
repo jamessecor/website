@@ -1,5 +1,5 @@
 function onLoading() {
-	var hi = document.getElementById('hi');
+	
 	hi.innerHTML = "Hello.";
 	setTimeout(function() {
 		hi.innerHTML+=".";
@@ -17,7 +17,7 @@ function onLoading() {
 		hi.innerHTML = "";
 		turnOn();
 	}, 2700);
-	
+		
 	// Top Button
 	document.getElementById('topButton').addEventListener("click", function() { 
 		onOff(); 
@@ -61,6 +61,8 @@ function onLoading() {
 		
 	
 }
+
+
 
 // Button array
 var apps = document.getElementsByClassName('app');

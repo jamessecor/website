@@ -1,7 +1,7 @@
 <?PHP
 include "nomoHeader.php";
 ?>
-<div id="hi" class="textOnPhone"></div>
+
 <!-- Images -->
 <img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/5.jpg" alt="no image available">
 <img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/4.jpg" alt="no image available">
@@ -25,6 +25,7 @@ include "nomoHeader.php";
 <br><br>March 14-April 15, 2017</p>
 </div>
 
+<script type="text/javascript" src="./volumeScript.js"></script>
 <script type="text/javascript" src="./indexScript.js"></script>
 <?PHP
 include "nomoFooter.php";

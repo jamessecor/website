@@ -74,6 +74,6 @@ Message <textarea name='memo' placeholder='Enter comments here.' ><?php echo iss
 // Include script for when form is displayed
 print "<script type='text/javascript' src='./contactScript.js'></script>";
 }
-
+print "<script type='text/javascript' src='./volumeScript.js'></script>";
 include "nomoFooter.php"
 ?>

@@ -18,3 +18,4 @@
 <div id="down"></div>
 <button id="topButton" ></button>
 <button id="back" ></button>
+<div id="hi" class="textOnPhone"></div>
