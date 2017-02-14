@@ -42,32 +42,20 @@ if(isset($_POST['submit'])) {
 
 if($validation=="Success") {
 	// Set up variables for db connection
-	$host='localhost';
-	$user='lunches';
-	$pwd='lunches';
-	$database='c3';
-	$date=date('Y-m-d');
-	$memo=addslashes($memo);
-	$name=addslashes($name);
+	include "../dbconfig/dbparams.php";
+	// Open databaes, enter info and close
+	include "../dbconfig/dbentry.php";
 	
-	// Connect to the database
-	$db=mysqli_connect($host, $user, $pwd, $database);
-	
-	// Send query to db
-	$query="INSERT INTO contacts (name, email, note, date) VALUES ('$name', '$email', '$memo', '$date')";
-	
-	$result=mysqli_query($db, $query);
-	if(!$result) {
-		$errmsg=mysqli_error($db);
-		print("Insert Error: $errmsg <br />");
-	}
-	
-	
-	print "<script>turnOn();</script>";
-	print "<div id='formResponse'>";
+	// Successful entry
+	//print "<script>turnOn();</script>";
+	print "<div id='success' class='textOnPhone'>";
 	print "<p>Success!<br><br>Thank you,<br>$name.</p>";
 	print "<p>Your information <br>has been saved.</p>";
 	print "</div>";
+	
+	// Include script for when form is submitted
+	print "<script type='text/javascript' src='./validationScript.js'></script>";
+	
 } else {
 
 ?>
@@ -83,7 +71,9 @@ Message <textarea name='memo' placeholder='Enter comments here.' ><?php echo iss
 
 
 <?PHP
-}
+// Include script for when form is displayed
 print "<script type='text/javascript' src='./contactScript.js'></script>";
+}
+
 include "nomoFooter.php"
 ?>

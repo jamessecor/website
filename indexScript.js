@@ -1,4 +1,23 @@
 function onLoading() {
+	var hi = document.getElementById('hi');
+	hi.innerHTML = "Hello.";
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},500);
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},1000);
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},1500);
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},2000);
+	setTimeout(function() {
+		hi.innerHTML = "";
+		turnOn();
+	}, 2700);
+	
 	// Top Button
 	document.getElementById('topButton').addEventListener("click", function() { 
 		onOff(); 

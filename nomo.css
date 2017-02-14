@@ -185,7 +185,7 @@
 	transform:translate(-50%,-50%);
 }
 
-#formResponse {
+.textOnPhone {
 	position: fixed;
 	font-family: "Lucida Sans Typewriter", "Lucida Sans", sans-serif;
 	top:50%;
