@@ -112,8 +112,17 @@ function showImages() {
 	onOrOff = true;
 	if(imageIndex == nomoImages.length) 
 		imageIndex = 0;
-	curImg = nomoImages[imageIndex];
-	ctx.drawImage(curImg, 0, 0, phone.width, phone.height);
+	
+	try {
+		curImg = nomoImages[imageIndex];
+		ctx.drawImage(curImg, 0, 0, phone.width, phone.height);
+	}
+	catch(err) {
+		ctx.fillStyle = '#eee';
+		ctx.font = "20 px sans-serif";
+		ctx.fillText("No Image Available", 50, 75);
+	}
+	
 	displayObjects(imgButtons);
 	prevImg = curImg;
 	imageIndex++;
