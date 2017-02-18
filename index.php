@@ -3,8 +3,8 @@ include "nomoHeader.php";
 ?>
 
 <!-- Images -->
-<img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/5.jpg" alt="no image available">
-<img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/4.jpg" alt="no image available">
+<img class="nomoImages" style="display:none" src="C:\Users\James\Dropbox\nomophobiaImages\1.jpg" alt="no image available">
+<img class="nomoImages" style="display:none" src="C:/users/james/dropbox/nomophobiaImages/2.jpg" alt="no image available">
 <img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/7.jpg" alt="no image available">
 <img class="nomoImages" style="display:none" src="https://dl.dropboxusercontent.com/u/33729311/images/12.jpg" alt="no image available">
 

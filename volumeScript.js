@@ -1,11 +1,11 @@
 
-var volume = 5;
+var volume = 3;
 var hi = document.getElementById('hi');
 
 // Volume UP
 document.getElementById('up').addEventListener("click", function() {
 	hi.innerHTML = "Volume:";
-	if(volume == 10) 
+	if(volume == 5) 
 		hi.innerHTML+="MAX";
 	else {
 		volume++;
@@ -35,6 +35,6 @@ document.getElementById('down').addEventListener("click", function() {
 	
 	setTimeout(function() {
 		hi.innerHTML = "";
-	}, 2500);
+	}, 3500);
 });
 
