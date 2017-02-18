@@ -12,11 +12,17 @@ function onLoading() {
 	},1500);
 	setTimeout(function() {
 		hi.innerHTML+=".";
-	},2000);
+	},1700);
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},1800);
+	setTimeout(function() {
+		hi.innerHTML+=".";
+	},1900);
 	setTimeout(function() {
 		hi.innerHTML = "";
 		turnOn();
-	}, 2700);
+	}, 2000);
 		
 	// Top Button
 	document.getElementById('topButton').addEventListener("click", function() { 
@@ -39,6 +45,7 @@ function onLoading() {
 	document.getElementById('map').addEventListener("click", function() { 
 		hideObjects(apps);
 		drawMap(); 
+		document.getElementById('toImagesApp').style.display = 'inline';
 	});
 		
 	// Show Info App
@@ -59,7 +66,12 @@ function onLoading() {
 		showImages();
 	});
 		
-	
+	// To Images App button
+	document.getElementById('toImagesApp').addEventListener("click", function() {
+		turnOff();
+		showImages();
+		document.getElementById('toImagesApp').style.display = 'none';
+	});
 }
 
 
@@ -76,14 +88,14 @@ var ctx = c.getContext("2d");
 function drawMap() {
 	turnOff();
 	onOrOff = true;
-	ctx.fillStyle = "#6fc";
+	ctx.fillStyle = "#dfe";
 	ctx.fillRect(0,0,phone.width,phone.height);
 	ctx.fillStyle="rgba(100,200,230,.7)";
 	ctx.fillRect(0,80,140,phone.height-80);
 	ctx.fillRect(190, 55, phone.width-165, 70);
 	ctx.fillRect(0,0,150,45);
 	ctx.fillRect(210,10,phone.width-210,30);
-	ctx.fillStyle = "rgba(50,100,120,.5);";
+	ctx.fillStyle = "rgba(80,80,100,.5);";
 	ctx.fillRect(190,110,10,10);
 	ctx.fillRect(220,55,40,5);
 	ctx.font = "10px sans-serif";
@@ -153,6 +165,7 @@ function turnOn() {
 function turnOff() {
 	hideObjects(apps);
 	hideObjects(imgButtons);
+	document.getElementById('toImagesApp').style.display = 'none';
 	ctx.fillStyle = '#555';
 	ctx.clearRect(0,0,phone.width,phone.height);
 	ctx.fillRect(0,0,phone.width,phone.height);
