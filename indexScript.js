@@ -76,7 +76,7 @@ var ctx = c.getContext("2d");
 function drawMap() {
 	turnOff();
 	onOrOff = true;
-	ctx.fillStyle = "#6f6";
+	ctx.fillStyle = "#6fc";
 	ctx.fillRect(0,0,phone.width,phone.height);
 	ctx.fillStyle="rgba(100,200,230,.7)";
 	ctx.fillRect(0,80,140,phone.height-80);
