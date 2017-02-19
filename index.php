@@ -25,7 +25,7 @@ include "nomoHeader.php";
 
 <!-- Info Text -->
 <div id="infoText" style="display:none">
-<p>#nomophobia<br>James Secor<br><br>See it at <br><a href="http://www.studioplacearts.com">Studio Place Arts</a><br>201 N Main St<br>Barre, VT 05641
+<p>#nomophobia<br><a href="jamessecor.weebly.com">James Secor</a><br><br>See it at <br><a href="http://www.studioplacearts.com">Studio Place Arts</a><br>201 N Main St<br>Barre, VT 05641
 <br><br>March 14-April 15, 2017</p>
 </div>
 
